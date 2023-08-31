@@ -1,15 +1,19 @@
-:root {
+ /*color variables */
+ :root {
   --dark: black;
   --light: wheat;
   --hoverColor: red;
 }
 
-body {
+ /* Define body default colors */
+ body {
   background: var(--light);
   color: var(--dark);
 }
 
-header {
+ /* Define header display, spacing, alignment, padding, and colors */
+
+ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +22,13 @@ header {
   padding: 10px 20px;
 }
 
-p {
+/* Set paragraph padding spacing */
+ p {
   padding-top: 10px;
 }
 
-h1 {
+ /* Assign larger font size, spacing and inverse colors to headings */
+ h1 {
   font-size: 48px;
   width: 450px;
   margin: 10px 0px 10px 0px;
@@ -32,7 +38,8 @@ h1 {
   text-align: right;
 }
 
-nav ul {
+/* Set navigation spacing and format */
+ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -40,19 +47,22 @@ nav ul {
   padding-right: 100px;
 }
 
-nav a {
+ /* Set navigation link font size, and allow for scroll transition */
+ nav a {
   color: var(--light);
   font-size: 20px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 
-html,
+ /* set smooth scroll transition for links */
+ html,
 body {
   scroll-behavior: smooth;
 }
 
-nav a:after {
+ /* create line under navigation links */
+ nav a:after {
   content: "";
   display: block;
   border-bottom: 4px solid var(--light);
@@ -61,11 +71,13 @@ nav a:after {
   margin-right: -10px;
 }
 
-nav a:hover:after {
+ /* change navigation line color when hovered over */
+ nav a:hover:after {
   border-bottom: 4px solid var(--hoverColor);
 }
 
-.hero {
+ /*developer's picture size and format */
+ .hero {
   width: 15%;
   height: 25vh;
   background-image: url("../images/recent_photo.jpg");
@@ -74,53 +86,47 @@ nav a:hover:after {
   border-style: solid;
 }
 
-.about_me {
+ /* define sections in main body to flex and create spacing */
+ main section {
   display: flex;
   padding-top: 50px;
 }
 
-.about_me_detail {
-  width: 70%;
+ /*create spacing and left border for detailed info in right column */
+ .detail {
+  width: 80%;
   padding-right: 5%;
   padding-left: 5%;
   border-left: solid var(--dark) 10px;
 }
 
-.work {
-  display: flex;
-  padding-top: 30px;
-}
-
-.work_detail {
-  width: 70%;
-  flex-wrap: wrap;
-  padding-right: 5%;
-  padding-left: 5%;
-  border-left: solid var(--dark) 10px;
-}
-
-.first_application {
+ /*set spacing for the first application listed */
+ .first_application {
   border-style: solid;
   border-width: 5px;
   margin: 30px;
 }
 
-.first_application header {
+ /*set spacing for the header of the first application listed */
+ .first_application header {
   padding: 5px;
 }
 
-.first_application img {
+ /* adjust width for first application image */
+ .first_application img {
   width: 100%;
 }
 
-.first_application:hover {
+ /*create highlighted frame around first application when hovered over */
+ .first_application:hover {
   border-style: solid;
   border-width: 10px;
   border-color: var(--hoverColor);
   margin: 30px;
 }
 
-.application {
+ /*set spacing for the other applications listed */
+ .application {
   display: inline-flex;
   flex-wrap: wrap;
   border-style: solid;
@@ -130,40 +136,59 @@ nav a:hover:after {
   width: 40%;
 }
 
-.application header {
+ /*set spacing for the header of the other applications listed */
+ .application header {
   padding: 10px;
   width: 100%;
 }
 
-.application img {
+/* adjust width for other applications images */
+ .application img {
   width: 100%;
 }
 
-.application:hover {
+/*create highlighted frame around other applications when hovered over */
+ .application:hover {
   border-style: solid;
   border-width: 10px;
   border-color: var(--hoverColor);
   margin: 30px;
 }
 
-.contact_me {
-  display: flex;
-  padding-top: 30px;
-}
-
-.contact_me_detail {
-  padding-left: 5%;
-  border-left: solid var(--dark) 10px;
-  font-size: 20px;
-}
-
-.contact_me_detail ul {
+ /*remove bullets padding and margins for contact info detail */
+ .detail ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.contact_me_detail li {
+ /* change font size and spacing for contact infor detail  */
+ .detail li {
   display: inline;
-  margin-right: 20px;
+  font-size: 30px;
+  margin-right: 100px;
+}
+
+ /*changes for responsive layout */
+ @media screen and (max-width: 992px) {
+  header {
+    display: block;
+  }
+  h1 {
+    text-align: left;
+  }
+
+  main section {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .detail {
+    width: 100%;
+    border-left: none;
+    border-top: solid var(--dark) 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
