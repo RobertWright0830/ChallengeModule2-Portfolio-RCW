@@ -1,0 +1,169 @@
+:root {
+  --dark: black;
+  --light: wheat;
+  --hoverColor: red;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 10px 20px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  width: 450px;
+  margin: 10px 0px 10px 0px;
+  padding-right: 5px;
+  background-color: var(--light);
+  color: var(--dark);
+  text-align: right;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+  padding-right: 100px;
+}
+
+nav a {
+  color: var(--light);
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+nav a:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid var(--light);
+  margin-top: 3px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+nav a:hover:after {
+  border-bottom: 4px solid var(--hoverColor);
+}
+
+.hero {
+  width: 15%;
+  height: 25vh;
+  background-image: url("../images/recent_photo.jpg");
+  background-size: cover;
+  background-position: center;
+  border-style: solid;
+}
+
+.about_me {
+  display: flex;
+  padding-top: 50px;
+}
+
+.about_me_detail {
+  width: 70%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-left: solid var(--dark) 10px;
+}
+
+.work {
+  display: flex;
+  padding-top: 30px;
+}
+
+.work_detail {
+  width: 70%;
+  flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-left: solid var(--dark) 10px;
+}
+
+.first_application {
+  border-style: solid;
+  border-width: 5px;
+  margin: 30px;
+}
+
+.first_application header {
+  padding: 5px;
+}
+
+.first_application img {
+  width: 100%;
+}
+
+.first_application:hover {
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--hoverColor);
+  margin: 30px;
+}
+
+.application {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 5px;
+  padding: 10px var(--dark);
+  margin: 30px;
+  width: 40%;
+}
+
+.application header {
+  padding: 10px;
+  width: 100%;
+}
+
+.application img {
+  width: 100%;
+}
+
+.application:hover {
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--hoverColor);
+  margin: 30px;
+}
+
+.contact_me {
+  display: flex;
+  padding-top: 30px;
+}
+
+.contact_me_detail {
+  padding-left: 5%;
+  border-left: solid var(--dark) 10px;
+  font-size: 20px;
+}
+
+.contact_me_detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact_me_detail li {
+  display: inline;
+  margin-right: 20px;
+}
