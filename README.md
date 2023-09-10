@@ -14,7 +14,7 @@ This was accomplished by:
 
 -the developer's first application is intended to be larger in size than the others
 
--clicked images deploy the application so the user can view (NOTE THAT THE DEVELOPER ONLY HAS ONE DEPLOYED APPLICATION SO ALL OTHERS HAVE DEAD LINKS.  DEVELOPER
+-clicked images deploy the application so the user can view (NOTE THAT THE DEVELOPER ONLY HAS LIMITED APPLICATIONS DEPLOYED SO ALL OTHERS HAVE DEAD LINKS.  DEVELOPER
 INCLUDED FORMAT SO THAT THEY CAN BE EASILY UPDATED AS MORE APPLICATIONS ARE DEPLOYED)
 
 -functionality exists that allows for a responsive layout that adapts to the users viewport due to resizing or device used
